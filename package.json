@@ -1,0 +1,37 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "web:start": "expo start --web-only",
+    "web:e2e:ci": "cypress run",
+    "web:e2e": "start-server-and-test web:start 19006 web:e2e:ci",
+    "web:cypress": "yarn run cypress open",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@react-native-picker/picker": "1.9.2",
+    "axios": "^0.21.1",
+    "change-case": "^4.1.2",
+    "expo": "~40.0.0",
+    "expo-constants": "~9.3.3",
+    "expo-status-bar": "~1.0.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "react-native-paper": "^4.7.2",
+    "react-native-web": "~0.13.12"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "@expo/webpack-config": "^0.12.61",
+    "@types/react": "~16.9.35",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.63.2",
+    "cypress": "^6.6.0",
+    "typescript": "~4.0.0"
+  },
+  "private": true
+}
